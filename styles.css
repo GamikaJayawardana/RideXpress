@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Manrope', sans-serif;
-    background-color: #ffffff;
+    background-color: #e8eaf3;
     color: #050f3c;
 }
 
@@ -16,6 +16,9 @@ header {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 4px #0000001a;
+    position: fixed;
+    top: 0;
+    width: 100%;
     
 }
 
