@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f0f4f8;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    .container {
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .car-card {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .car-card:hover {
+      transform: scale(1.03);
+    }
+
+    .car-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .car-info {
+      padding: 20px;
+    }
+
+    .car-info h2 {
+      font-size: 1.4rem;
+      color: #0072ff;
+    }
+
+    .car-info p {
+      margin: 10px 0;
+      color: #666;
+    }
+
+    .price {
+      color: #00c853;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    footer {
+      background: #0072ff;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
