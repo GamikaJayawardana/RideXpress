@@ -92,7 +92,6 @@ nav a:hover {
 .nav-buttons a:hover{
     color: #ffffff;
     background-color: #b61817;
-    transition: all 0.3 ease;
-    
+    transition: all 0.3 ease; 
 }
 
