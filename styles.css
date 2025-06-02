@@ -16,11 +16,13 @@ header {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 4px #0000001a;
+    
 }
 
 header img {
     width: 220px;
     height: auto;
+    margin-left: 100px;
 }
 
 nav {
@@ -62,6 +64,7 @@ nav a:hover {
   display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 100px;
 }
 
 .nav-buttons ul{
