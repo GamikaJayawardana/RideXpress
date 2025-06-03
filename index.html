@@ -9,9 +9,15 @@
 </head>
 <body>
   <header>
+    <div class="header-mob">
     <div class="logo">
       <img src="logo_blue.png" alt="RideXpress Logo" />
+
     </div>
+     <button class="hamburger" id="hamburger-btn" aria-label="Open menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      </div>
     <nav>
       <ul>
         <li><a href="#home">Home</a></li>
@@ -23,12 +29,22 @@
     <div class="nav-buttons">
       <ul>
       <li><a href="login">Sign In</a></li>
-
       </ul>
     </div>
+
+     
   </header>
 
   
+
+
+  <script>
+  const hamburger = document.getElementById('hamburger-btn');
+  const nav = document.getElementById('main-nav');
+  hamburger.addEventListener('click', () => {
+    nav.classList.toggle('open');
+  });
+  </script>
   
 </body>
 </html>

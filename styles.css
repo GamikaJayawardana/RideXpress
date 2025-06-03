@@ -10,7 +10,7 @@ body {
 
 header {
     background-color: #ffffff;
-    padding: 20px;
+    padding:20px 0px;
     text-align: center;
     display: flex;
     justify-content: space-between;
@@ -26,6 +26,20 @@ header img {
     width: 220px;
     height: auto;
     margin-left: 100px;
+    
+}
+
+.header-mob{
+    display: flex;
+    justify-content: space-between;
+  }
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 nav {
@@ -102,14 +116,31 @@ nav a:hover {
 }
 
 @media (max-width: 1074px) {
+
   header {
     flex-direction: column;
     align-items: center;
-    padding: 15px;
+    padding: 15px 0px;
+    margin:0;
+  }
+
+  .header-mob{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 20px;
+    box-shadow: 0 2px 4px #0000001a;
+  }
+
+ .hamburger {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
   }
 
   header img {
-    margin-left: 0;
+    margin-left: 20px;
     width: 180px;
     margin-bottom: 10px;
   }
@@ -117,6 +148,7 @@ nav a:hover {
   nav {
     width: 100%;
     margin-bottom: 10px;
+     box-shadow: 0 1px 2px #0000001a;
   }
 
   nav ul {
@@ -130,6 +162,10 @@ nav a:hover {
     margin: 10px 0;
     text-align: left;
     padding: 0px 10px;
+    width: 100%;
+    text-align: center;
+   
+  
   }
 
   .nav-buttons {
@@ -160,3 +196,5 @@ nav a:hover {
     font-size: 18px;
   }
 }
+
+
