@@ -23,7 +23,7 @@ header {
 }
 
 header img {
-    width: 220px;
+    width: 200px;
     height: auto;
     margin-left: 100px;
     
@@ -41,6 +41,8 @@ header img {
   font-size: 2rem;
   cursor: pointer;
 }
+
+
 
 nav {
     display: flex;
@@ -64,7 +66,7 @@ nav li {
 nav a {
     text-decoration: none;
     color: #050f3c;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
     transition: color 0.3s ease;
     padding: 5px;
@@ -99,7 +101,7 @@ nav a:hover {
 .nav-buttons a {
     text-decoration: none;
     color: #b61817;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
     transition: color 0.3s ease;
     padding: 10px 35px;
@@ -115,21 +117,21 @@ nav a:hover {
     transition: all 0.3 ease; 
 }
 
-@media (max-width: 1074px) {
+@media (max-width: 1011px) {
 
   header {
     flex-direction: column;
     align-items: center;
-    padding: 15px 0px;
+    padding: 15px 0px 2px 0px;
     margin:0;
   }
 
   .header-mob{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
-    margin: 0 20px;
-    box-shadow: 0 2px 4px #0000001a;
+    margin: 0 10px;
   }
 
  .hamburger {
@@ -147,8 +149,15 @@ nav a:hover {
 
   nav {
     width: 100%;
-    margin-bottom: 10px;
-     box-shadow: 0 1px 2px #0000001a;
+    margin-bottom: px;
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid #e0e0e0;
+    display: none;
+  }
+
+  nav.open{
+    display: flex;
   }
 
   nav ul {
@@ -156,23 +165,21 @@ nav a:hover {
     flex-direction: column;
     width: 100%;
     align-items: center;
+    margin-bottom: 10px;
   }
 
   nav li {
     margin: 10px 0;
     text-align: left;
     padding: 0px 10px;
-    width: 100%;
-    text-align: center;
-   
-  
+    
   }
 
   .nav-buttons {
-    margin: 0;
     width: 100%;
-    display: flex;
-    justify-content: flex-start;
+    display: block;
+    margin: 0 auto 20px auto;
+
   }
 
   .nav-buttons ul {
@@ -189,11 +196,11 @@ nav a:hover {
   .nav-buttons a {
     width: fit-content;
     padding: 8px 20px;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   nav a, .nav-buttons a {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 

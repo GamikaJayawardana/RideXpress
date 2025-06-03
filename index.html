@@ -5,19 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RideXpress | Fast Deals. Smooth Rides</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="Styles/styles.css" />
 </head>
 <body>
   <header>
     <div class="header-mob">
     <div class="logo">
-      <img src="logo_blue.png" alt="RideXpress Logo" />
+      <img src="Images/logo_blue.png" alt="RideXpress Logo" />
 
     </div>
      <button class="hamburger" id="hamburger-btn" aria-label="Open menu">
         <i class="fas fa-bars"></i>
       </button>
+
       </div>
+
     <nav>
       <ul>
         <li><a href="#home">Home</a></li>
@@ -25,12 +27,13 @@
         <li><a href="#services">Services</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </nav>
+    
     <div class="nav-buttons">
       <ul>
       <li><a href="login">Sign In</a></li>
       </ul>
     </div>
+    </nav>
 
      
   </header>
@@ -38,13 +41,7 @@
   
 
 
-  <script>
-  const hamburger = document.getElementById('hamburger-btn');
-  const nav = document.getElementById('main-nav');
-  hamburger.addEventListener('click', () => {
-    nav.classList.toggle('open');
-  });
-  </script>
-  
+
+  <script src="Scripts/menu.js"></script>
 </body>
 </html>
