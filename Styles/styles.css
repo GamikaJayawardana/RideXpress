@@ -27,3 +27,85 @@ img{
     width: 100%;
 }
 
+.container{
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header {
+    display: block;
+    width:100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px 35px;
+}
+
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--text-color);
+    display: none;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar a{
+    color: var(--text-color);
+    font-size: 1rem;
+    text-decoration: uppercase;
+    font-weight: 600;
+}
+
+.navbar a:hover,
+.navbar .active{
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+#search-icon{
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.search-box{
+    position:absolute;
+    top:110%;
+    right: 0;
+    left: 0;
+    background: 4px 4px 20px rgb(15 54 55 / 10%);
+    border: 1px solid var(--main-color);
+    border-radius: 0.5rem;
+    clip-path: circle(0% at 100% 0);
+}
+
+.search-box.active{
+    clip-path: circle(144% at 100% 0);
+    transition: 0.4s ;
+}
+
+.search-box input{
+    width: 100%;
+    padding: 20px;
+    border:none;
+    outline:none;
+    background: transparent;
+    font-size: 1rem;
+}

@@ -12,29 +12,32 @@
 <body>
     <!-- nav-bar Section -->
      <header>
-        <!--Nav Conatainer-->
-        <div class = "nav-conatiner">
+        <!--Nav Container-->
+        <div class = "nav container">
             <!--Menu Icon-->
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
             <!--Logo-->
-            <a href="Images/logo_blue.png" class="logo"> </a>
+                <img src="Images/logo_blue.png" alt="RideXpress Logo" class="logo" />
+            </a>
             <!--Nav List-->
             <ul class="navbar">
-                <li><a href="#home">Home</a></li>
+                <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#cars">Cars</a></li>
                 <li><a href="#blog">Our Blog</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
             <!--Search bar-->
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
             <!--Search box-->
-            <div class="search-box">
-                <input type="text" placeholder="Search Here..." />
-                <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="search-box container">
+                <input type="search" placeholder="Search Here..." />
             </div>
         </div>
      </header>
     
+
+     <!-- link to Js-->
+    <script src="Scripts/main.js"></script>
 </body>
 </html>
