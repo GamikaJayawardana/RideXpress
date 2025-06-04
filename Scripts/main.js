@@ -11,3 +11,9 @@ document.querySelector("#menu-icon").onclick = () => {
     navbar.classList.toggle("active");
     searchBox.classList.remove("active");
 }
+
+let header = document.querySelector("header");
+
+window.addEventListener('scroll', () => {
+    header.classList.toggle("shadow", window.scrollY > 0);
+});
