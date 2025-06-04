@@ -1,227 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
-body {
-    margin: 0;
-    padding: 0;
+*{
     font-family: 'Manrope', sans-serif;
-    background-color: #e8eaf3;
-    color: #050f3c;
-}
-
-/* nav-bar Section */
-.nav-bar {
-    background-color: #ffffff;
-    padding:20px 0px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 4px #0000001a;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    
-    
-}
-
-.nav-bar img {
-    width: 200px;
-    height: auto;
-    margin-left: 100px;
-    
-}
-
-.nav-mob{
-    display: flex;
-    justify-content: space-between;
-  }
-
-.hamburger {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-nav ul {
-    list-style-type: none;
     margin: 0;
     padding: 0;
-}
-
-nav li {
-    display: inline;
-    margin: 0 15px;
-    font-weight: 600;
-}
-
-nav a {
+    scroll-padding-top: 1rem;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
     text-decoration: none;
-    color: #050f3c;
-    font-size: 16px;
-    font-weight: 700;
-    transition: color 0.3s ease;
-    padding: 5px;
 }
 
-nav a:hover {
-    color: #b61817;
-    border-bottom: 3px solid #b61817;
-    font-weight: 800;
-    transition: color 0.3s ease, border-bottom 0.1s ease, font-weight 0.3 ease;
+:root{
+    --main-color:#b61817;
+    --text-color:#000413;
+    --bg-color:#fff;
+    --secondary-bg-color:#050f3c;
 }
 
-.nav-buttons{
-  display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 100px;
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
-.nav-buttons ul{
-  list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-buttons li {
-    display: inline;
-    margin: 0 15px;
-    font-weight: 600;
-}
-
-.nav-buttons a {
-    text-decoration: none;
-    color: #b61817;
-    font-size: 16px;
-    font-weight: 700;
-    transition: color 0.3s ease;
-    padding: 10px 35px;
-    border: 2px solid #b61817;
-    border-radius: 10px; 
-}
-
-.nav-buttons a:hover{
-    color: #ffffff;
-    background-color: #b61817;
-    transition: all 0.3s ease;
-}
-
-/* header Section */
-
-
-
-/* brands Section */
-.brand{
-  display: none;
-}
-
-
-
-@media (max-width: 1011px) {
-
-  .nav-bar {
-    flex-direction: column;
-    align-items: center;
-    padding: 15px 0px 2px 0px;
-    margin:0;
-  }
-
-  .nav-mob{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+img{
     width: 100%;
-    margin: 0 10px;
-    z-index: 1000;
-  }
-
- .hamburger {
-    display: block;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-  }
-
-  .nav-bar img {
-    margin-left: 20px;
-    width: 180px;
-    margin-bottom: 10px;
-  }
-
-  nav {
-    width: 100%;
-    position: relative;
-    background: #fff;
-    border-top: 2px solid #e0e0e0;
-    flex-direction: column;
-    display: block;
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    pointer-events: none;
-    transition: max-height 0.4s cubic-bezier(0.4,0,0.2,1), opacity 0.3s ease;
-  }
-
-  nav.open {
-    max-height: 500px;
-    opacity: 1;
-    pointer-events: auto;
-    
-  }
-
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-
-  nav li {
-    margin: 10px 0;
-    text-align: left;
-    padding: 0px 10px;
-    
-  }
-
-  .nav-buttons {
-    width: 100%;
-    display: block;
-    margin: 0 auto 20px auto;
-
-  }
-
-  .nav-buttons ul {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .nav-buttons li {
-    margin: 10px 0;
-    padding: 0px 10px;
-  }
-
-  .nav-buttons a {
-    width: fit-content;
-    padding: 8px 20px;
-    font-size: 16px;
-  }
-
-  nav a, .nav-buttons a {
-    font-size: 16px;
-  }
-
- 
 }
-
 
