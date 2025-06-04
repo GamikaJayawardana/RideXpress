@@ -109,3 +109,17 @@ header {
     background: transparent;
     font-size: 1rem;
 }
+
+
+@media (max-width:1200px){
+    .container {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+}
+
+@media (max-width:991px){
+    
+
+}
